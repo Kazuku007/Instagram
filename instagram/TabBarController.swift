@@ -4,7 +4,7 @@
 //
 //  Created by 三木一樹 on 2021/04/28.
 //
-
+import Firebase
 import UIKit
 
 class TabBarController: UITabBarController, UITabBarControllerDelegate {
@@ -28,6 +28,13 @@ class TabBarController: UITabBarController, UITabBarControllerDelegate {
         }
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if Auth.auth().currentUser == nil{
+            let loginViewController = self.storyboard?.instantiateViewController(withIdentifier: "Login")
+            present(loginViewController!, animated: true, completion: nil)
+        }
+    }
     
 
     /*
