@@ -244,7 +244,6 @@
                                 <state key="normal" title="Cancel"/>
                                 <connections>
                                     <action selector="cancelButton:" destination="M49-hK-RlY" eventType="touchUpInside" id="keE-4c-mng"/>
-                                    <action selector="completeButton:" destination="M49-hK-RlY" eventType="touchUpInside" id="eEX-Pw-zPg"/>
                                 </connections>
                             </button>
                         </subviews>
